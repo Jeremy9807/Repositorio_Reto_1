@@ -2,10 +2,17 @@
 const { Router} = require ('express');
 const { route } = require('express/lib/application');
 const router = Router();
+const orden = require('../Datos/Ordenes.json');
 
-/*router.get('/', (req,res) =>{
-    res.json({"Test": "resultado test"});
-});*/
+console.log(orden.lenght);
+let result = [];
+for(var i = 0; i < orden.lenght; i++){
+    result[i] = "id: " + ordenes[i].id
+}
+
+router.get('/', (req,res) =>{
+    res.json(result);
+});
 
 
 module.exports = router;

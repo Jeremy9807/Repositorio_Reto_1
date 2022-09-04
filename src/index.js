@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use(require('./Rutas/rutas'));
+app.use('/admin/ordenes',require('./Rutas/rutas'));
 
 // Iniciando server
 app.listen(app.get('port'), () => {

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camilo",
+        "apellido": "Torres",
+        "total": 240000,
+        "productos":[
+            "3130","3131"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Johana",
+        "apellido": "Ballen",
+        "total": 150000,
+        "productos":[
+            "3130"
+        ]
+    }
+]
