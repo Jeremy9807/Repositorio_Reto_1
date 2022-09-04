@@ -4,7 +4,7 @@
   "description": "Almacenamiento del reto 2 bootcamp Omni.pro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nodemon" : "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "dependencies": {
     "express": "^4.18.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
