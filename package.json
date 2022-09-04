@@ -4,7 +4,7 @@
   "description": "Almacenamiento del reto 2 bootcamp Omni.pro",
   "main": "index.js",
   "scripts": {
-    "nodemon" : "nodemon src/index.js"
+    "nodemon": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Jeremy9807/Repositorio_Reto_2#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "express-validator": "^6.14.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
