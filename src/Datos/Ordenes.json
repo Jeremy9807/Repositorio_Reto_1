@@ -16,5 +16,14 @@
         "productos":[
             "3130"
         ]
+    },
+    {
+        "id": 3,
+        "nombre": "Camila",
+        "apellido": "Vallejo",
+        "total": 590000,
+        "productos":[
+            "3130","3131","3133"
+        ]
     }
 ]
