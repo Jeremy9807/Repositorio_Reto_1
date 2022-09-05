@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camilo",
+        "apellido": "Torres",
+        "total": 245400,
+        "productos": [
+            "3130",
+            "3131"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Johana",
+        "apellido": "Ballen",
+        "total": 159000,
+        "productos": [
+            "3130"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Camila",
+        "apellido": "Vallejo",
+        "total": 581400,
+        "productos": [
+            "3130",
+            "3131",
+            "3133"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Jeremy",
+        "apellido": "Ballesteros",
+        "total": 581400,
+        "productos": [
+            "3130",
+            "3131",
+            "3133"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Josue",
+        "apellido": "Ortiz",
+        "total": 495000,
+        "productos": [
+            "3130",
+            "3133"
+        ]
+    }
+]
