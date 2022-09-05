@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use(require('./Rutas/rutas'));
+app.use('/admin/producto', require('./Rutas/eliminar_producto'));//Endpoint numero 5. Eliminar producto
 
 // Iniciando server
 app.listen(app.get('port'), () => {
