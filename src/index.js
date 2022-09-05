@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use('/admin/producto',require('./Rutas/listar_productos')); //Endpoint numero 1
+app.use('/admin/producto',require('./Rutas/listar_productos')); //Endpoint numero 1. Listar Productos Web
 
 // Iniciando server
 app.listen(app.get('port'), () => {
