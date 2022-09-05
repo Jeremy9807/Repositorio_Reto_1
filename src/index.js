@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use('/producto', require('./Rutas/rutas'));
+app.use('/producto', require('./Rutas/consultar_producto_movil'));
 
 // Iniciando server
 app.listen(app.get('port'), () => {
