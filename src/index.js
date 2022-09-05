@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use("/producto", require('./Rutas/listar_productos_movil'));
+app.use("/producto", require('./Rutas/listar_productos_movil'));//Endpoint 7. Listar productos Movil
 
 // Iniciando server
 app.listen(app.get('port'), () => {
