@@ -18,6 +18,7 @@ app.use('/admin/producto', require('./Rutas/eliminar_producto'));//Endpoint nume
 app.use('/admin/producto', require('./Rutas/insertar_producto'));//Endpoint numero 3, Insertar producto Web
 app.use('/admin/producto',require('./Rutas/listar_productos')); //Endpoint numero 1. Listar Productos Web
 app.use('/producto', require('./Rutas/consultar_producto_movil'));//Endpoint numero 8. Consultar producto movil
+app.use("/producto", require('./Rutas/listar_productos_movil'));//Endpoint 7. Listar productos Movil
 
 // Iniciando server
 app.listen(app.get('port'), () => {
