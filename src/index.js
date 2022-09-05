@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use('/comprar', require('./Rutas/realizar_compra'));//Endpoint numero 10, Realizar Compra
+app.use('/comprar', require('./Rutas/realizar_compra'));//Endpoint numero 10, Realizar Compra Movil
 
 // Iniciando server
 app.listen(app.get('port'), () => {
