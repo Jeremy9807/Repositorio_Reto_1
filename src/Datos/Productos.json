@@ -22,5 +22,18 @@
         "descuento":0.20,
         "inventario": 5,
         "fecha_creacion": "2022-08-28"
+    },
+    {
+        "sku": "3133",
+        "nombre": "Bolso Velez lavanda de cuero para mujer",
+        "precio": 350000,
+        "url": "/imagenes/bolso.png",
+        "marca": "Velez",
+        "descripcion": "Bolso de dise;o practico y moderno, hecho en cuero liso y con dise;o hexagonal con sistema de cierre con chapeta y broche de imán con amplia capacidad en la bolsa interior.",
+        "iva": 0.16,
+        "descuento":0.20,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-28"
     }
+    
 ]
