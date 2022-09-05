@@ -16,7 +16,7 @@ app.use('/admin/ordenes',require('./Rutas/consultar_ordenes'));//Endpoint 6. Con
 app.use('/admin/producto/',require('./Rutas/consultar_producto')); //Endpoint Numero 2, consultar producto Web
 app.use('/admin/producto', require('./Rutas/eliminar_producto'));//Endpoint numero 5. Eliminar producto Web
 app.use('/admin/producto', require('./Rutas/insertar_producto'));//Endpoint numero 3, Insertar producto Web
-
+app.use('/admin/producto',require('./Rutas/listar_productos')); //Endpoint numero 1. Listar Productos Web
 
 // Iniciando server
 app.listen(app.get('port'), () => {
