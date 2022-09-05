@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use(require('./Rutas/rutas'));
+app.use('/resumen',require('./Rutas/resumen_compra'));//Endpoint Numero 9, Resumen compra
 
 // Iniciando server
 app.listen(app.get('port'), () => {
