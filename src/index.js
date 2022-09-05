@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
-app.use('/admin/producto', require('./Rutas/insertar_producto'));//Endpoint numero 3, Insertar producto
+app.use('/admin/producto', require('./Rutas/insertar_producto'));//Endpoint numero 3, Insertar producto Web
 
 // Iniciando server
 app.listen(app.get('port'), () => {
