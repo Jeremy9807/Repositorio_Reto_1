@@ -11,7 +11,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 //Rutas
+
 app.use('/admin/producto', require('./Rutas/actualizar_producto'));//Endpoiont numero 4. Actualizar producto Web
+app.use('/admin/ordenes',require('./Rutas/consultar_ordenes'));//Endpoint 6. Consultar ordenes de compra Web
+
 
 // Iniciando server
 app.listen(app.get('port'), () => {
