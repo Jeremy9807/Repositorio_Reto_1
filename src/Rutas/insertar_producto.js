@@ -2,9 +2,13 @@
 const { Router} = require ('express');
 const { route } = require('express/lib/application');
 const { body, validationResult } = require('express-validator');
-const productos = require('../Datos/Productos2.json');
+const productos = require('../Datos/Productos.json');
 const router = Router();
+const fs = require('fs');
 
+//Acceso para lectura del archivo Productos.json
+const archivo = fs.readFileSync('./src/Datos/Productos.json', 'utf-8');
+const registro2 = JSON.parse(archivo);
 
 router.post('/', [
     //Validacion de los valores recibidos
@@ -24,6 +28,8 @@ router.post('/', [
         console.log(errors);
     }
     var registro = (req.body);
+
+    //Asignacion de fecha actual
     let fecha = new Date();
     let año = fecha.getFullYear();
     let mes = fecha.getMonth()+1;
@@ -35,6 +41,14 @@ router.post('/', [
         fecha_creacion = año + "-"+ mes + "-" + dia;
     }   
     registro.fecha_creacion=fecha_creacion;
+    
+    registro2.push(registro);
+
+    //Añadimos el nuevo registro al archivo 
+    const Newproductos = JSON.stringify(registro2);
+    console.log(Newproductos);
+    fs.writeFileSync('./src/Datos/Productos.json',Newproductos, 'utf-8');
+    console.log(registro2);
     res.send('recibido');
 });
 
